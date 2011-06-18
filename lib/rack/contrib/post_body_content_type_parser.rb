@@ -22,7 +22,7 @@ module Rack
 
     # Supported Content-Types
     #
-    APPLICATION_JSON = 'application/json'.freeze
+    APPLICATION_JSON = %r{application/json}.freeze
 
     def initialize(app)
       @app = app
